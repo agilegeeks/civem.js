@@ -1,6 +1,6 @@
 /**
  * @preserve
- * 
+ *
  * {{= it.title}} v{{= it.version}}
  *
  * Copyright 2012, {{= it.author.name}} <{{= it.author.email}}>
@@ -65,7 +65,7 @@
 			if (!formElement.willValidate) {
 				continue;
 			}
-			if (formElement.tagName.toUpperCase() === "SELECT" || formElement.type.toUpperCase() === "RADIO" || formElement.type.toUpperCase() === "CHECKBOX") {
+			if (formElement.tagName.toUpperCase() === "SELECT" || formElement.type.toUpperCase() === "RADIO" || formElement.type.toUpperCase() === "CHECKBOX" || formElement.type.toUpperCase() === "FILE") {
 				formElement.onchange = getInputHandler(formElement.onchange);
 			} else {
 				formElement.oninput = getInputHandler(formElement.oninput);
